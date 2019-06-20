@@ -19,8 +19,8 @@ public class Main {
 		
 		Usuari usuari = new Usuari(name, surname, password, date);
 		
-		
-		
+	
+		System.out.println(usuari.surname);
 	}
 
 }
