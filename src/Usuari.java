@@ -12,40 +12,39 @@ public class Usuari {
 		this.surname = surname;
 		this.password = password;
 		this.date = date;
-		
+
 	}
 
 	public Usuari() {
-	
 	}
-	
+
 	public Usuari(String name) throws Exception {
-		// TODO Auto-generated constructor stub
-		System.out.println("Se crea un usuario ");
+		System.out.println("Cliente dado de alta ");
 		checkdata(name);
 
 	}
 
 	public void checkdata(String data) throws Exception {
 		if (data != null) {
-			System.out.println("Campo no vacio ");
+			System.out.println("Datos correctos ");
 		} else {
-			
-				throw new Exception("Campo vacio ");
-			} 
-		
+
+			throw new Exception("Campo vacio ");
+		}
+
 	}
+
 	public boolean verifyClient(String name2) throws Exception {
 		boolean isUsuari = false;
-		this.name = name2;
-//		this.name = null;
-		if (this.name == name2) {
+// Se asigna al this.name como contante para simular un usuario en la DB	
+		this.name = "Julio";
+		if (this.name.equals(name2)) {
 			System.out.println("Cliente firmado correctamente");
 			isUsuari = true;
 		} else {
 			System.out.println("Cliente no encontrado ");
 			isUsuari = false;
-		} 
+		}
 		return isUsuari;
 	}
 }
