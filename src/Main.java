@@ -1,11 +1,9 @@
 import java.util.Scanner;
 
-//StudyJam
 public class Main {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
 		Usuari usuari = new Usuari();
 		int select = 0;
 		do {
@@ -53,7 +51,6 @@ public class Main {
 	}
 
 	private static void optionUser() {
-		// TODO Auto-generated method stub
 		System.out.println("1) Crear un nuevo video");
 		System.out.println("2) Ver la lista de videos ");
 		int select = sc.nextInt();
