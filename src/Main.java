@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -16,6 +17,7 @@ public class Main {
 
 		boolean isUser = false;
 		String name = null;
+
 		if (select == 1) {
 			System.out.print("Dame el nombre del usuario");
 			name = sc.next();
@@ -55,12 +57,14 @@ public class Main {
 		System.out.println("2) Ver la lista de videos ");
 		int select = sc.nextInt();
 		if (select == 1) {
+			ArrayList<String> tags = new ArrayList<>();
+			tags.add("El primer video ");
 			Video video = new Video();
+			video.addTags(tags);
+			System.out.println(tags);
 		} else {
 			Video video = new Video();
-			String title = video.title;
-			title = "Los barbaros";
-			System.out.println(title);
+			System.out.println(video.title);
 		}
 	}
 

@@ -39,7 +39,7 @@ public class Usuari {
 // Se asigna al this.name como contante para simular un usuario en la DB	
 		this.name = "Julio";
 		if (this.name.equals(name2)) {
-			System.out.println("Cliente firmado correctamente");
+			System.out.println("Cliente existente en la BD");
 			isUsuari = true;
 		} else {
 			System.out.println("Cliente no encontrado ");

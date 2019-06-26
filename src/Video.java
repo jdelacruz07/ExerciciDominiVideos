@@ -13,12 +13,12 @@ public class Video {
 	}
 
 	public Video() {
-		System.out.println("Se crea el video");
-		ArrayList<String> tag = new ArrayList<>();
-		addTags(tag);
-	}
+// Simula un video en la BD		
+		this.title = "Los barbaros";
+			}
 
-	public void addTags(List<String> tags) {
-		System.out.println("Se crea una lista");
+	public void addTags(List<String> tag) {
+		System.out.println("Se agrega a la lista ");
+		tags.addAll(tag);
 	}
 }
